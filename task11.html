@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        /*navigation bar*/
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        /*  navigation bar :list styling */
+        #navbar::before {
+            content: "";
+            background-color: white;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 2rem;
+        }
+
+        #navbar ul li a {
+            color: black;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            border: 2px solid black;
+        }
+
+        #logo img {
+            height: 20px;
+            margin: 3px 6px;
+            
+        }
+        #item1{
+            padding-left: 360px;
+        }
+
+        /* home section */
+        #home {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            /* padding: 3px 200px; */
+            justify-content: center;
+
+
+        }
+
+        #home::before {
+            content: "";
+            background-color: rgb(45, 199, 92);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #home img {
+            height: 700px;
+            transform: rotate(330deg);
+        }
+
+        #home .h1 {
+            justify-content: center;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="item"><a href="#">Soylent</a></li>
+            <li class="item"><a href="#">Drink</a></li>
+            <li class="item"><a href="#">Cafe</a></li>
+            <li class="item"><a href="#">popular</a></li>
+            <li class="item"><a href="#">Product</a></li>
+        </ul>
+        <div id="logo">
+            <img src="logo.jpeg" alt="">
+        </div>
+        <ul id="item1">
+            <li class="item"><a href="#">Lang</a></li>
+            <li class="item"><a href="#">reference</a></li>
+            <li class="item"><a href="#">contact us</a></li>
+
+        </ul>
+
+
+    </nav>
+    <section id="home">
+        <h1 class="h1-primary"> Fruits is back</h1>
+        <div class="img">
+            <img src="./421cd374267a---strawberry-transparent-labeling.png" alt="">
+        </div>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. In dignissimos optio eveniet velit ab
+            perspiciatisenim eligendi perferendis quas itaque Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Fugiat omnis magnam in recusandae rerum tempora harum amet, eius aliquam! Veritatis.</p>
+        button,<button>Call us</button>
+
+    </section>
+
+
+</body>
+
+</html>
